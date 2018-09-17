@@ -5,7 +5,7 @@ services:
   # Backend
   ###############################
   server:
-    image: 'm42king/cab432:server_1'
+    image: 'm42king/cab432:server_2'
     expose:
       - 5000
     ports:
@@ -15,7 +15,7 @@ services:
   # Frontend
   ###############################
   client:
-    image: 'm42king/cab432:client_1'
+    image: 'm42king/cab432:client_2'
     expose:
       - 3000
     ports:
