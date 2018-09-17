@@ -1,0 +1,22 @@
+version : '3'
+
+services:
+  ###############################
+  # Backend
+  ###############################
+  server:
+    image: 'm42king/cab432:server_1'
+    expose:
+      - 5000
+    ports:
+      - 5000:5000
+
+  ###############################
+  # Frontend
+  ###############################
+  client:
+    image: 'm42king/cab432:client_1'
+    expose:
+      - 3000
+    ports:
+      - 80:3000
